@@ -30,20 +30,11 @@ public abstract class BaseAppAct extends AppCompatActivity {
      */
     public abstract void setViewStatus();
 
-    public abstract void onActResume();
 
-    public abstract void onActPause();
 
-    public abstract void onActDestroy();
-
-    public abstract void onActRestart();
-
-    public abstract void onActStop();
-
-    public abstract void onActStart();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initIntentParam(getIntent());
         beforeInitView();
@@ -51,39 +42,4 @@ public abstract class BaseAppAct extends AppCompatActivity {
         setViewStatus();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        onActStart();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        onActResume();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        onActRestart();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        onActPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        onActStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        onActDestroy();
-    }
 }

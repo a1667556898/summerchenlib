@@ -151,34 +151,4 @@ public abstract class BaseDetailAct extends BaseAppAct {
     public void setViewStatus() {
 
     }
-
-    @Override
-    public void onActResume() {
-
-    }
-
-    @Override
-    public void onActPause() {
-
-    }
-
-    @Override
-    public void onActDestroy() {
-
-    }
-
-    @Override
-    public void onActRestart() {
-
-    }
-
-    @Override
-    public void onActStop() {
-
-    }
-
-    @Override
-    public void onActStart() {
-
-    }
 }
